@@ -36,5 +36,6 @@ weather:
     api:
       id: "7777ec31cbc33f627e8c5f394f3e536b"
       url: "https://api.openweathermap.org/data/2.5/weather?q={city},{country}&appid=${weather.external.api.id}"
+      timeout: 30 # timeout in sec
 
 
