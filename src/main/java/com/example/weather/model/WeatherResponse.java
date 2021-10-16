@@ -1,1 +1,1 @@
-package com.example.weather.model;import lombok.Builder;import lombok.Data;@Data@Builderpublic class WeatherResponse extends BaseModel{    private String description;}
+package com.example.weather.model;import lombok.Builder;import lombok.Data;@Data@Builderpublic class WeatherResponse extends BaseModel {    private String description;}

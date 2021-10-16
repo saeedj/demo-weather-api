@@ -10,12 +10,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 class DemoWeatherApiApplicationTests {
 
-	@Autowired
-	private WeatherController weatherController;
+    @Autowired
+    private WeatherController weatherController;
 
-	@Test
-	void contextLoads() {
-		assertThat(weatherController).isNotNull();
-	}
+    @Test
+    void contextLoads() {
+        assertThat(weatherController).isNotNull();
+    }
 
 }
