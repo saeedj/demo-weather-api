@@ -10,7 +10,7 @@ springdoc:
     path: /   # Redirect localhost:8080/weather to swagger-ui.html
 
 server:
-  port: 8090
+  port: 8080
   servlet:
     context-path: /weather
 
@@ -36,6 +36,5 @@ weather:
     api:
       id: "7777ec31cbc33f627e8c5f394f3e536b"
       url: "https://api.openweathermap.org/data/2.5/weather?q={city},{country}&appid=${weather.external.api.id}"
-      timeout: 10 # timeout in sec if no response back from server
 
 
