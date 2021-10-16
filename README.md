@@ -41,7 +41,7 @@ To run the test locally run the test gradle task
 To see the api definition navigate to openAPI URL after running the app
 
 ```
-http://localhost:8090/weather/
+http://localhost:8080/weather/
 ```
 
 
