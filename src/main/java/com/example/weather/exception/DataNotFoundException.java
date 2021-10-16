@@ -1,0 +1,1 @@
+package com.example.weather.exception;public class DataNotFoundException extends RuntimeException {    private static final long serialVersionUID = -7749810534810403681L;    public DataNotFoundException(String msg) {        super(msg);    }}

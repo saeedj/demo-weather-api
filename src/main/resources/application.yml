@@ -1,0 +1,41 @@
+api:
+  info:
+    title: Spring Boot Weather API
+    description: Spring Boot Weather API which fetches data from https://openweathermap.org/
+    version: 1.0.0
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /   # Redirect localhost:8080/weather to swagger-ui.html
+
+server:
+  port: 8090
+  servlet:
+    context-path: /weather
+
+# DB Config
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.H2Dialect
+  #  h2:
+  #    console:
+  #      enabled: true
+  datasource:
+    url: jdbc:h2:mem:weather-db
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+
+# External API config
+
+weather:
+  external:
+    api:
+      id: "7777ec31cbc33f627e8c5f394f3e536b"
+      url: "https://api.openweathermap.org/data/2.5/weather?q={city},{country}&appid=${weather.external.api.id}"
+      timeout: 10 # timeout in sec if no response back from server
+
+

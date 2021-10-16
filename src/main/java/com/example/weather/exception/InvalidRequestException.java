@@ -1,0 +1,1 @@
+package com.example.weather.exception;public class InvalidRequestException extends RuntimeException {    private static final long serialVersionUID = -3129843434237178027L;    public InvalidRequestException(String msg) {        super(msg);    }}
